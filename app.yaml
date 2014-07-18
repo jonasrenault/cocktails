@@ -1,0 +1,12 @@
+application: jonasrenault
+version: 1
+runtime: php
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /assets
+  static_dir: build/assets
+
+- url: /.*
+  static_dir: build/assets
